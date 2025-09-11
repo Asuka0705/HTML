@@ -3,104 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디기 A-1</title><style>
-        *{
+    <title>웹디기B-1</title>
+    <style>
+        * {
             margin: 0;
             padding: 0;
         }
         #wrap {
-            width: 1200px;
-            margin: 0 auto;
-        
+            width: 100%;
+
         }
-        
         #header {
             width: 100%;
-            height: 100px;
-            background-color: #c82727;
-
+            background-color: #ffcece;
         }
-        .logo {
+        #header .header_container {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+        
+        }
+        #header .header_container .logo {
             width: 20%;
-            height: 100%;
-            background-color: #8a7777;
-
+            height: 100px;
+            background-color: #1a1aa4;
         }
-        .nav {
+        #header .header_container .nav {
             width: 80%;
-            height: 100%;
-            background-color: #8b6b6b;
-
+            height: 100px;
+            background-color: #305ecc;
         }
-        #article {
-            width: 100%;
+        #slider {
+            width: 1200px;
             height: 300px;
-            background-color: #f35c5c;
+            background-color: #f39898;
+            margin: 0 auto;
+            
         }
+        
         #main {
-            width: 100%;
-            height: 200px;
-            background-color: #c76161;
-            display: flex;  
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
         }
         .main1 {
-            width: 33.3333%;
-            height: 100%;
-            background-color: #644848;
+            width: 400px;
+            height: 200px;
+            background-color: #b35f5f;
         }
         .main2 {
-            width: 33.3333%;
-            height: 100%;
-            background-color: #553636;
+            width: 400px;
+            height: 200px;
+            background-color: #bc4141;
         }
-        .main3{
-            width: 33.3333%;
-            height: 100%;
-            background-color: #684343;
+        .main3 {
+            width: 400px;
+            height: 200px;
+            background-color: #c40303;
         }
-        #footer{
+        #footer {
+            width: 100%;
             height: 100px;
-            background-color: #c27a7a;
+            background-color: #ff7878;
         }
-        .footer1 {
+        #footer .footer_container {
+            width: 1200px;
+            height: 100px;
+            background-color: #ea3b3b;
+            margin: 0 auto;
+            display: flex; 
+        }
+        .footer_container .footer1 {
             width: 20%;
             height: 100px;
-            background-color: #563a3a;
+            background-color: #ff1414;
+
         }
-        .footer2{
-            width: 60%;
-            height: 100px;
-            background-color: #412727;
+        .footer_container .footer2 {
+            width: 80%;
         }
-        .footer3 {
-            width: 20%;
-            height: 100px;
-            background-color: #241d1d;
+        .footer2 .footer2-1 {
+            width: 100%;
+            height: 50px;
+            background-color: #e74141;
         }
-            
+        .footer2 .footer2-2 {
+            width: 100%;
+            height: 50px;
+            background-color: #e17878;
+        }
         
+
     </style>
 </head>
 <body>
     <div id="wrap">
-        <header id="header">
-            <div class="logo"></div>
-            <div class="nav"></div>
-
-        </header>
-
-        <article id="article"></article>
-
-        <main id="main">
+        <div id="header">
+            <div class="header_container">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
+            </div>
+        </div>
+        <div id="slider"></div>
+        <div id="main">
             <div class="main1"></div>
             <div class="main2"></div>
             <div class="main3"></div>
-        </main>
-        <footer id="footer">
-            <div id="footer1"></div>
-            <div id="footer2"></div>
-            <div id="footer3"></div>
-        </footer>
+        </div>
+
+
+
+        <div id="footer">
+            <div class="footer_container">
+                <div class="footer1"></div>
+                <div class="footer2">
+                    <div class="footer2-1"></div>
+                    <div class="footer2-2"></div>
+
+                </div>
+                
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
