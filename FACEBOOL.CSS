@@ -85,6 +85,14 @@
     border-radius: 5px;
     margin: 0 auto;
 }
+#insert3 {
+    width: 100%;
+    height: 100%;
+    background-color: #4143de;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
 .password-input {
     width: 360px;
     height: 50px;
@@ -135,5 +143,4 @@
 }
 .password-input:focus::placeholder {
     color: #cccccc;
-
 }
