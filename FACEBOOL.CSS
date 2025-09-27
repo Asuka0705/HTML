@@ -86,13 +86,79 @@
     margin: 0 auto;
 }
 #insert3 {
-    width: 100%;
-    height: 100%;
-    background-color: #4143de;
+    width: 92%;
+    height: 15%;
+    background-color: #ffffff;
     margin-top: 50px;
     border-radius: 5px;
     margin: 0 auto;
 }
+.login-input {
+    width: 360px;
+    height: 50px;
+    font-size: 19px;
+    border-radius: 5px;
+    background-color: #0866ff;
+    margin-top: 27px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login-input:hover {
+    background-color: #1877f2;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+#insert4 {
+    width: 87%;
+    height: 5%;
+    background-color: #ffffff;
+    margin: 40px auto 0 auto;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 24px;
+
+}
+.lost {
+    color: #0866ff;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.lost:hover {
+    text-decoration: underline;
+    color: #0866ff;
+}
+#insert5 {
+    width: 32%;
+    height: 15%;
+    background-color: #42b72a;
+    margin-top: 400px;
+    border-radius: 5px;
+    margin: 25px auto 0 auto; 
+}
+.account {
+    width: 100%;
+    height: 100%;
+    background-color: #42b72a;
+    margin-top: 400px;
+    border-radius: 5px;
+    margin: 0px auto 0 auto;
+    font-size: 17px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+.account:hover {
+    background-color: #36a420;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
 .password-input {
     width: 360px;
     height: 50px;
