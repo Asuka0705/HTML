@@ -59,6 +59,31 @@
     width: 40%;
     height: 80%;
     background-color: #f2f4f7;
+    position: relative;
+}
+#text7 {
+    width: 280px;
+    height: 30px;
+    background-color: #f2f4f7;
+    position: absolute;
+    bottom: 60px;    
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    
+}
+.text8 {
+    font-size: 13px;
+    line-height: 2;
+}
+.text9 {
+    font-size: 13px;
+    font-weight: bold;
+    
+}
+.text9:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 .section {
     width: 400px;
@@ -138,7 +163,7 @@
     height: 15%;
     background-color: #42b72a;
     margin-top: 400px;
-    border-radius: 5px;
+    border-radius: 7px;
     margin: 25px auto 0 auto; 
 }
 .account {
@@ -180,6 +205,63 @@
     width: 100%;
     height: 24.5vh;
 }
+#footer1 {
+    width: 65%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0  auto;
+    
+}
+.footer1-1 {
+    width: 100%;
+    height: 27%;
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 7px;
+    position: relative;
+}
+.footer1-2 {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -70px;
+    position: relative;
+    
+}
+.footer-menu {
+    font-size: 12px;
+    gap: 14px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: #8a8d91;
+    max-width: 900px;
+    position: absolute;
+    top: -7px;
+    column-gap: 16px;
+    row-gap: 3px;
+
+}
+.footer1-3 {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -70px;
+    position: relative;
+
+}
+.last {
+    font-size: 11px;
+    color: #8a8d91;
+    position: absolute;
+    bottom: 10px;
+}
+.footer-menu span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 .email-input {
     width: 360px;
     height: 50px;
@@ -210,3 +292,32 @@
 .password-input:focus::placeholder {
     color: #cccccc;
 }
+.lang-selector {
+    font-size: 12px;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 11px;
+    color: #8a8d91;
+    
+}
+.lang-selector span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lang-selector button {
+    border: 1px solid #ccd0d5;
+    background: #f5f6f7;
+    padding: 1px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #4b4f56;
+    font-size: 14px;
+    align-self: flex-start;
+    font-weight: bold;
+  }
+.lang-selector button:hover {
+    background: #ebedf0;
+    transition: background-color 0.2s;
+  }
