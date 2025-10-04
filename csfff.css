@@ -14,10 +14,10 @@ a {
 #menu {
     font: bold 16px;
     width: 1200px;
-    height: 50px;
+    height: 70px;
     background: #7e7e7e;
     color: black;
-    line-height: 50px;
+    line-height: 70px;
     margin: 0 auto;
     text-align: center;
 }
@@ -28,13 +28,15 @@ a {
 }
 #menu > ul > li > ul {
     width: 240px;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
     position: absolute;
     font-size: 14px;
-    background: skyblue;
+    background: rgb(180, 180, 180);
+    transition: max-height 0.7s ease;
 }
 #menu > ul > li:hover > ul {
-    display: block;
+    max-height: 500px;
     background-color: #a9a9a9;
 }
 #menu > ul > li > ul > li:hover{
