@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
 #menu {
     width: 100%;
     height: 163px;
 }
+
+
 #menu1 {
     width: 100%;
     height: 50%;
@@ -15,25 +18,60 @@
 #logo {
     width: 9%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #fff;
     position: absolute;
     left: 112px;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 #image {
-    width: 100%;
-    transform: scale(1.1);
+    width: 120%;
+   
 
 }
+
 #image:hover {
     cursor: pointer;
+ 
 }
-
+#sub-menu {
+    width: 27%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0; 
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+}
+#sub1, #sub2, #sub3, #sub4 {
+    position: relative;
+    padding: 0 30px; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+#sub1:hover, #sub2:hover, #sub3:hover, #sub4:hover {
+    color: #007bff;
+}
+#sub1::after, #sub2::after, #sub3::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
 #menu2 {
     width: 100%;
     height: 50%;
     background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
 }
