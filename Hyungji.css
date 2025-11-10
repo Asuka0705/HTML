@@ -1,69 +1,90 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 #wrap {
-    width: 100%;
-    height: 1200px;
+  width: 100%;
 }
+
+body {
+  background-color: #ababab;
+}
+
 #menu {
-    width: 100%;
-    height: 8%;
-    background-color: #fff;
-    position: relative;
-    overflow: hidden; /* 배경이 삐져나오지 않게 */
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  padding: 0 48px;
+  justify-content: space-between;
 }
+
 #logo {
-    width: 14.5%;
-    height: 100%;
-    background-color: #fff;
-    position: absolute;
-    left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 14.5%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 img {
-    width: 75%;
-    height: auto;
-    display: block;
+  width: 75%;
+  height: auto;
+  display: block;
 }
+
 img:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 ul {
-    display: flex;
-    position: absolute;
-    left: 35%;
-    top: 35px;
+  display: flex;
 }
+
 li {
-    position: relative;
-    list-style: none;
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s;
+  list-style: none;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  color: black;
+  padding: 0 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+  z-index: 1;
+  align-content: center;
 }
+
+.user {
+  width: 100px;
+  height: 100%;
+}
+
+.box {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background-color: #ffff;
+  transition: all 0.5s;
+  opacity: 0;
+
+}
+
+ul:hover ~ .box {
+  height: 250px;
+  opacity: 1;
+}
+
 li:hover {
     color: rgb(255, 147, 147);
 }
-.bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    background-color: #78ff83;
-    transition: all 0.5s;
-    z-index: -1;
-}
-ul:hover .bg {
-    height: 100%;
-    background-color: #ed0d0d;
+
+#menu:hover li {
+  padding: 0 30px; /* hover 시 padding을 늘려서 항목들이 멀어지도록 */
 }
