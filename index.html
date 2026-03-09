@@ -1,81 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디기1</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        #wrap {
-            width: 1200px;
-            margin: 0 auto;
-
-        }
-        #header {
-            width: 100%;
-            display: flex;
-
-            
-        }
-        .logo {
-            width: 20%;
-            height: 100px;
-            background-color: #7d5555;
-        }
-        .nav {
-            width: 80%;
-            height: 100px;
-            background-color: #943131;
-        }
-        #slider {
-            width: 100%;
-            height: 300px;
-            background-color: #4b2c2c;
-        }
-        #main {
-            width: 100%;
-            display: flex;
-        }
-        .main1 {
-            width: 33.3333%;
-            height: 200px;
-            background-color: #000000;
-        }
-        .main2 {
-            width: 33.3333%;
-            height: 200px;
-            background-color: #2e1616;
-        }
-        .main3 {
-            width: 33.3333%;
-            height: 200px;
-            background-color: #360c0c;
-        }
-        #footer {
-            width: 100%;
-            height: 100px;
-            background-color: #322525;
-        }
-
-    </style>
+    <title>Samsung</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div id="wrap">
-        <div id="header">
-            <div class="logo"></div>
-            <div class="nav"></div>
-        </div>
-        <div id="slider"></div>
-        <div id="main">
-            <div class="main1"></div>
-            <div class="main2"></div>
-            <div class="main3"></div>
 
+<body>
+
+    <!-- 헤더 -->
+    <header>
+
+        <div class="logo">
+            SAMSUNG
         </div>
-        <div id="footer"></div>
-    </div>
+
+<nav>
+
+    <ul class="menu">
+
+        <li>
+            <a href="#">회사소개</a>
+
+            <ul class="submenu">
+                <li><a href="#">기업정보</a></li>
+                <li><a href="#">경영철학</a></li>
+                <li><a href="#">연혁</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">제품</a>
+
+            <ul class="submenu">
+                <li><a href="#">스마트폰</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">가전제품</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">서비스</a>
+
+            <ul class="submenu">
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">수리서비스</a></li>
+                <li><a href="#">보증안내</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">고객지원</a>
+
+            <ul class="submenu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">문의하기</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+        <div class="user">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+
+    </header>
+
+
+    <!-- 메인 -->
+    <main>
+
+        <!-- 슬라이드 -->
+        <section class="slider">
+
+            <div class="slide-track">
+
+                <div class="slide">
+                    삼성은 혁신적인 기술로 미래를 만들어갑니다.
+                </div>
+
+                <div class="slide">
+                    세계 최고의 전자 기업으로 성장하고 있습니다.
+                </div>
+
+                <div class="slide">
+                    AI, 반도체, 모바일 기술을 선도합니다.
+                </div>
+
+                <div class="slide">
+                    지속 가능한 미래를 위한 기술을 개발합니다.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 소개 섹션 -->
+        <section class="about">
+
+            <h2>About Samsung</h2>
+
+            <p>
+                삼성전자는 세계 최고의 기술력과 혁신을 통해 글로벌 IT 산업을
+                선도하는 기업입니다. 반도체, 스마트폰, 가전제품 등 다양한 분야에서
+                미래 기술을 개발하며 새로운 가능성을 만들어가고 있습니다.
+            </p>
+
+        </section>
+
+
+        <!-- 서비스 소개 -->
+        <section class="service">
+
+            <div class="service-box">
+                <h3>혁신 기술</h3>
+                <p>AI, 반도체, 모바일 기술을 통해 미래 산업을 선도합니다.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>글로벌 기업</h3>
+                <p>전 세계 수억 명의 고객에게 혁신적인 제품을 제공합니다.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>지속 가능한 미래</h3>
+                <p>환경과 사회를 고려한 기술 개발을 이어가고 있습니다.</p>
+            </div>
+
+        </section>
+
+
+        <!-- 공지사항 -->
+        <section class="notice">
+
+            <h2>공지사항</h2>
+
+            <ul>
+                <li>삼성 신제품 출시 안내</li>
+                <li>2026 글로벌 기술 컨퍼런스 개최</li>
+                <li>삼성 서비스센터 점검 안내</li>
+                <li>삼성 채용 공고 안내</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <!-- 푸터 -->
+    <footer>
+
+        <p>
+            Copyright © Samsung Corporation. All Rights Reserved.
+        </p>
+
+    </footer>
+
 </body>
+
 </html>
